@@ -4,3 +4,23 @@ body {
     text-align: center;
 }
 
+header {
+    background-color: aqua;
+    padding: 20px;
+}
+
+.search-bar {
+    margin: 20px;
+}
+
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.placed-input {
+    bottom: 20px;
+    right: 10px;
+}
+
