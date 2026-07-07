@@ -4,13 +4,37 @@ body {
     text-align: center;
 }
 
+input[type="search"] {
+    width: 100px;
+}
+
 header {
     background-color: aqua;
     padding: 20px;
+    padding-left: 500px;
 }
 
 .search-bar {
     margin: 20px;
+}
+
+nav a {
+    background-color: silver;
+    float: center;
+    font-size: 30px;
+    margin: 0 auto;
+    border: 5px solid black;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.nav {
+    font-size: large;
+}
+
+a:hover {
+    background-color: gray;
+    color:azure
 }
 
 .container {
