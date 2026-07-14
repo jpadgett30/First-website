@@ -1,0 +1,63 @@
+@media all and (min-width: 800px) {
+    body{
+        grid-template-columns: 200px auto 200px;
+        grid-template-rows: 50px 300px 50px;
+        grid-template-areas: 
+            "head head head"
+            "nav main aside"
+            "foot foot foot";
+    }
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    text-align: center;
+}
+
+input[type="search"] {
+    width: 100px;
+}
+
+header {
+    background-color: aqua;
+    padding: 20px;
+    padding-left: 500px;
+}
+
+.search-bar {
+    margin: 20px;
+}
+
+nav {
+    background-color: silver;
+}
+
+main > nav a, main > nav a:visited {
+    background-color: silver;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 25px;
+    
+}
+
+nav a, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: gray;
+    color:azure
+}
+
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.placed-input {
+    bottom: 20px;
+    right: 10px;
+}

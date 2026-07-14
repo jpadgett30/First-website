@@ -10,6 +10,30 @@
     </style>
 </head>
 <body>
-    
+    <header class="header">
+        <img src="/images/logos/templogo.png" alt="A temporary logo" href="/index.html" style="float:left">
+        <h1>Temp Header
+            <div class="search-bar" style="float: right">
+                <input type="submit" value="Search" style="float: right;">
+                <input type="search" placeholder="subject" aria-label="subject" style="float: right">
+            </div>
+        </h1>
+    </header>
+    <main>
+        <nav class="nav">
+            <a id="Section1" href="/section1.html" style="cursor: pointer">Section 1</a> &nbsp;
+            <a id="Section2" href="/section2.html" style="cursor: pointer">Section 2</a> &nbsp;
+            <a id="Section3" href="/section3.html" style="cursor: pointer">Section 3</a> &nbsp;
+            <a id="Section4" href="/section4.html" style="cursor: pointer">Section 4</a>
+        </nav>
+        <p1>Test</p1>
+        <input type="checkbox">
+        <p2>Testing text</p2> 
+        <p2>More testing text</p2>
+        <p3><a href="/section1.html">Go to second page</a></p3>
+        <button type="button">
+            Home
+        </button>
+    </main>
 </body>
 </html>
