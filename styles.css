@@ -1,50 +1,56 @@
-body {
-    margin: 0;
-    background-color: white;
-    text-align: center;
+body{
+    display: flex;
+    flex-direction: column;
+    
 }
 
-input[type="search"] {
-    width: 100px;
-}
 
 header {
+    position:sticky;
+    text-align: center;
+    
     background-color: aqua;
-    padding: 20px;
-    padding-left: 500px;
 }
 
-.search-bar {
-    margin: 20px;
-}
-
-nav a {
+nav {
+    
+    text-align: center;
     background-color: silver;
-    float: center;
-    font-size: 30px;
-    margin: 0 auto;
-    border: 5px solid black;
-    border-color: black;
-    border-radius: 5px;
 }
 
-.nav {
-    font-size: large;
+main > nav a, main > nav a:visited {
+    width: 20px;
+    background-color: silver;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 25px;
+    
 }
 
-a:hover {
+main > nav a, main > nav a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+main > nav a:hover {
     background-color: gray;
     color:azure
 }
 
-.container {
-    position: relative;
-    width: 200px;
-    height: 200px;
+main {
+    
+    text-align: center;
+    background-color: green;
 }
 
-.placed-input {
-    bottom: 20px;
-    right: 10px;
+aside {
+    
+    text-align: center;
+    background-color: yellow;
 }
 
+footer {
+    
+    text-align: center;
+    background-color: orange;
+}
