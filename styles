@@ -1,39 +1,27 @@
-@media all and (min-width: 800px) {
-    body{
-        grid-template-columns: 200px auto 200px;
-        grid-template-rows: 50px 300px 50px;
-        grid-template-areas: 
-            "head head head"
-            "nav main aside"
-            "foot foot foot";
-    }
-}
-
-body {
-    margin: 0;
-    background-color: white;
-    text-align: center;
-}
-
-input[type="search"] {
-    width: 100px;
-}
-
 header {
-    background-color: aqua;
-    padding: 20px;
-    padding-left: 500px;
+    position:fixed;
+    text-align: center;
+    height: 120px;
+    
+    background-color: rgb(28, 0, 114);
 }
 
-.search-bar {
-    margin: 20px;
+header h1 {
+    position: relative;
+    text-align: center;
+    left: -100px;
 }
 
-nav {
+.top-nav {
+    position: absolute;
+    text-align: center;
     background-color: silver;
+    width: 100vw;
+    top:120px;
 }
 
-main > nav a, main > nav a:visited {
+header > nav a, header > nav a:visited {
+    width: 20px;
     background-color: silver;
     margin-right: 20px;
     margin-left: 20px;
@@ -41,23 +29,30 @@ main > nav a, main > nav a:visited {
     
 }
 
-nav a, a:visited {
-    color: inherit;
+header > nav a, header > nav a:visited {
     text-decoration: none;
+    color: inherit;
 }
 
-a:hover {
+.top-nav a:hover {
     background-color: gray;
     color:azure
 }
 
-.container {
-    position: relative;
-    width: 200px;
-    height: 200px;
+main {
+    height: 200vw;
+    text-align: center;
+    background-color: green;
 }
 
-.placed-input {
-    bottom: 20px;
-    right: 10px;
+aside {
+    
+    text-align: center;
+    background-color: yellow;
+}
+
+footer {
+    
+    text-align: center;
+    background-color: orange;
 }

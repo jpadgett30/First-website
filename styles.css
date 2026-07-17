@@ -1,56 +1,78 @@
-body{
-    display: flex;
-    flex-direction: column;
-    
+*{
+    box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
 
 header {
+    position: sticky;
+    top: 0px;
+    background-color: rgb(28, 0, 114);
+    height: 120px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.navbar-top {
     position:sticky;
-    text-align: center;
-    
-    background-color: aqua;
-}
-
-nav {
-    
-    text-align: center;
+    top: 120px;
+    border: 3px solid gray;
+    border-left: 0;
+    border-right: 0;
     background-color: silver;
-}
-
-main > nav a, main > nav a:visited {
-    width: 20px;
-    background-color: silver;
-    margin-right: 20px;
-    margin-left: 20px;
     font-size: 25px;
-    
+    text-align: center;
 }
 
-main > nav a, main > nav a:visited {
+.navbar-top a, .navbar-top a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-top a:hover {
+    background-color: gray;
+    color: white;
+}
+
+main {
+    height: 200vw;
+}
+
+.nav-left {
+    float: left;
+    width: 10%;
+    padding-right: 0;
+    border: 3px solid gray;
+    border-left: 0;
+    border-top: 0;
+}
+
+.nav-left a {
+    display: block;
+    padding: 10px;
+    background-color: silver;
+    font-size: 20px;
+}
+
+.nav-left a, .nav-left a:visited {
     text-decoration: none;
     color: inherit;
 }
 
-main > nav a:hover {
+.nav-left a:hover {
     background-color: gray;
-    color:azure
+    color: white;
 }
 
-main {
+main section {
+    float: left;
+    margin-top: 30px;
+    margin-left: 100px;
+    width: 70%;
+    background-color: lightblue;
     
-    text-align: center;
-    background-color: green;
-}
-
-aside {
-    
-    text-align: center;
-    background-color: yellow;
-}
-
-footer {
-    
-    text-align: center;
-    background-color: orange;
 }
