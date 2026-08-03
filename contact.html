@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/logos/templogo.png" alt="A temporary logo" style="float:left">
+        </a>
+        <h1>Musical Education</h1>
+    </header>
+    <nav class="navbar-top">
+        <a id="Section1" href="introduction/homepage.html" style="cursor: pointer">Introduction</a> &nbsp;
+        <a id="Section2" href="beginner.html" style="cursor: pointer">Beginner</a> &nbsp;
+        <a id="Section3" href="medium.html" style="cursor: pointer">Medium</a> &nbsp;
+        <a id="Section4" href="advanced.html" style="cursor: pointer">Advanced</a> &nbsp;
+        <a href="contact.html ">Contact</a>
+    </nav>
+    <main>
+        <nav class="nav-left">
+        </nav>
+        <section>
+            <h2>Cotanct form</h2>
+            <p>
+                I you would like to leave me a question or comment or anything, just fill out the form below and maybe I'll get
+                it.
+            </p>
+            <div class="form-container">
+                <form id="contactForm" novalidate>
+                    <div class="form-section">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-section">
+                        <label for="email">Email address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-section">
+                        <label for="subject">What's the subject of your message?</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="question">Question</option>
+                            <option value="comment">Comment or critique</option>
+                            <option value="problem">Got a problem!</option>
+                            <option value="nice">Just got something nice to say.</option>
+                        </select>
+                    </div>
+                    <div class="form-section">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-section">
+                        <button type="submit">Submit message</button>
+
+                    </div>
+                    <p id="formMessage" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+        <nav>
+
+        </nav>
+    </main>
+</body>
+</html>

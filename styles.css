@@ -11,11 +11,15 @@ header {
     top: 0px;
     background-color: rgb(28, 0, 114);
     height: 120px;
+    color:silver;
+    font-size: 30;
+    font-family: "Gabriola", cursive, serif;
 }
 
 header h1 {
     text-align: center;
 }
+
 
 .navbar-top {
     position:sticky;
@@ -23,6 +27,7 @@ header h1 {
     border: 3px solid gray;
     border-left: 0;
     border-right: 0;
+    height: 30px;
     background-color: silver;
     font-size: 25px;
     text-align: center;
@@ -40,9 +45,16 @@ header h1 {
 
 main {
     height: 200vw;
+    font-size: 18;
+}
+
+main section h2 {
+    text-align: center;
 }
 
 .nav-left {
+    position:sticky;
+    top: 150px;
     float: left;
     width: 10%;
     padding-right: 0;
@@ -72,7 +84,94 @@ main section {
     float: left;
     margin-top: 30px;
     margin-left: 100px;
+    padding: 0 10px;
+    padding-bottom: 10px;
     width: 70%;
     background-color: lightblue;
     
 }
+
+.text-centered {
+    text-align: center;
+}
+
+main section .container {
+    display: flex;
+    justify-content: space-evenly;
+    border: 8px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    column-gap: 1em;
+    row-gap: 2em;
+}
+
+main section .box {
+    border: 5px solid silver;
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+
+    text-align: center;
+    border-radius: 15px;
+}
+
+main section .box h3 {
+    margin-top: 5%;
+
+}
+
+main section .after-image {
+    padding-top: 20px;
+    clear: both;
+}
+
+.box {
+    background-color: silver;
+    text-decoration: none;
+    color: inherit;
+}
+
+.form-container {
+    display: grid;
+    place-items: center;
+}
+
+form {
+    width: 50%;
+    background-color: white;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.form-section {
+    margin: 1em;
+}
+
+.form-section label {
+    display: block;
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea {
+    width: 100%;
+}
+
+
+
+#form-message {
+    min-height: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.errorMessage {
+    color: red;
+}
+
+.successMessage {
+    color: black;
+}
+
